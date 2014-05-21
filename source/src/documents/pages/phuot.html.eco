@@ -1,0 +1,28 @@
+---
+title: "Phượt"
+layout: "default"
+isPage: true
+description: Xách balo lên và đi
+---
+
+<article>
+	<div class="killer-logo">
+		<h1><%- @document.title or @document.name %></h1>
+	</div>
+	<h4><%- @document.description %></h4>
+	<div class="split-view-list-gists">
+		<% for post in @getFilesAtPath(@getPath("phuot", "posts")).toJSON(): %>
+			<div class="split-gist <%= if post.id is @document.id then 'gist-selected' else 'inactive' %>">
+				<div class="gist-meta">
+					<div class="gist-name">
+						<a href="<%= @getLiveUrl() %><%= post.url %>">
+						    <%- post.title or post.name %>    
+						  </a>
+					</div><!-- gist-name -->
+				</div><!-- gist-meta -->
+			  
+		  	</div>		
+		<% end %> 	
+	</div><!-- split-view-list-gists -->	
+</article>
+

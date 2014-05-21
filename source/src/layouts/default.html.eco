@@ -13,7 +13,8 @@
 	<title><%= @getPreparedTitle() %></title>
 	<meta name="description" content="<%= @getPreparedDescription() %>" />
 	<meta name="keywords" content="<%= @getPreparedKeywords() %>" />
-
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Tinos:400,700&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
 	<!-- DocPad Meta -->
 	<%- @getBlock('meta').toHTML() %>
 
@@ -26,14 +27,45 @@
 	<!--[if lt IE 7]>
 	<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	<![endif]-->
+	<section class="sidebar">
+		<nav class="navbar navbar-default" role="navigation">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#"><%- @site.title %></a>
+		    </div><!-- navbar-header -->
 
-	<header>
-		<h1><a href="<%= @site.url %>"><%- @site.title %></a></h1>
-	</header>
-	<article>
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+		      <div class="list-group">
+		      	<% for post in @getCollection('posts').sortArray(date: -1): %>
+
+				  <a href="<%= @getLiveUrl() %><%= post.url %>" class="<%= if post.id is @document.id then 'active' else 'inactive' %> list-group-item">
+				    <h4 class="list-group-item-heading"><%- post.title or post.name %></h4>
+				    
+				  </a>				
+				<% end %>  
+				<% for page in @getCollection("html").findAll({isPage:true}).toJSON(): %>			        
+		            <a href="<%= @getLiveUrl() %><%= page.url %>" class="<%= if page.id is @document.id then 'active' else 'inactive' %> list-group-item">
+		               <h4 class="list-group-item-heading"> <%= page.title %></h4>
+		              
+		            </a>			        
+			    <% end %>     
+		      </div> 
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+	</section><!-- sidebar -->
+	<section class="container">
 		<%- @content %>
-	</article>
-	<footer></footer>
+	</section>	
 
 	<!-- DocPad Scripts + Our Own -->
 	<%- @getBlock('scripts').add(@site.scripts).toHTML() %>
