@@ -33,22 +33,22 @@ docpadConfig = {
 
 			# The website's styles
 			styles: [
-				'/vendor/normalize.css'
-				'/vendor/h5bp.css'
-				'/styles/style.css'
+				'http://luubinhan.github.io/fun/vendor/normalize.css'
+				'http://luubinhan.github.io/fun/vendor/h5bp.css'
+				'http://localhost:9778/styles/style.css'
 			]
 
 			# The website's scripts
 			scripts: [
 				"""
 				<!-- jQuery -->
-				<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+				<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 				<script>window.jQuery || document.write('<script src="/vendor/jquery.js"><\\/script>')</script>
 				"""
 
-				'/vendor/log.js'
-				'/vendor/modernizr.js'
-				'/scripts/script.js'
+				'http://luubinhan.github.io/fun/vendor/log.js'
+				'http://luubinhan.github.io/fun/vendor/modernizr.js'
+				'http://luubinhan.github.io/fun/scripts/script.js'
 			]
 
 
