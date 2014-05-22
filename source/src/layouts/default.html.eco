@@ -63,7 +63,7 @@
 		  </div><!-- /.container-fluid -->
 		</nav>
 	</section><!-- sidebar -->
-	<section class="container">
+	<section class="master">
 		<%- @content %>
 	</section>	
 

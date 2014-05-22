@@ -14,7 +14,7 @@ docpadConfig = {
 			# The production url of our website
 			# If not set, will default to the calculated site URL (e.g. http://localhost:9778)
 			url: "http://luubinhan.github.com/fun"
-			liveUrl: "http://localhost:9778"
+			liveUrl: "http://luubinhan.github.io/fun"
 
 			# Here are some old site urls that you would like to redirect from
 			oldUrls: [
@@ -35,7 +35,7 @@ docpadConfig = {
 			styles: [
 				'http://luubinhan.github.io/fun/vendor/normalize.css'
 				'http://luubinhan.github.io/fun/vendor/h5bp.css'
-				'http://localhost:9778/styles/style.css'
+				'http://luubinhan.github.io/fun/styles/style.css'
 			]
 
 			# The website's scripts
