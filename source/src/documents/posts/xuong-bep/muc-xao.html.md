@@ -1,6 +1,6 @@
 ---
 layout: 'content'
-title: 'MỰC XÀO'
+title: 'Mực xào'
 description: 
 ---
 

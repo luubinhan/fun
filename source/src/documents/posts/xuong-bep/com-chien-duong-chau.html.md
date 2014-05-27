@@ -1,6 +1,6 @@
 ---
 layout: 'content'
-title: 'CƠM CHIÊN DƯƠNG CHÂU'
+title: 'Cơm chiên dương châu'
 description: 
 ---
 

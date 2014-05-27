@@ -23,19 +23,19 @@ docpadConfig = {
 			]
 
 			# The default title of our website
-			title: "Fun"
+			title: "Happy together"
 
 			# The website description (for SEO)
 			description: "Ways to make your life happier"
 
 			# The website keywords (for SEO) separated by commas
-			keywords: "fun, happier, mẹo vặt, thủ thuật, quán ăn, quán ngon, địa điểm, sống tốt"
+			keywords: "fun, happier, mẹo vặt, thủ thuật, quán ăn, quán ngon, địa điểm, sống tốt, together"
 
 			# The website's styles
 			styles: [
 				'http://luubinhan.github.io/fun/vendor/normalize.css'
 				'http://luubinhan.github.io/fun/vendor/h5bp.css'
-				'http://luubinhan.github.io/fun/styles/style.css'
+				'http://luubinhan.github.com/fun/styles/style.css'
 			]
 
 			# The website's scripts
@@ -111,7 +111,7 @@ docpadConfig = {
 		development:
 			templateData:
 				site:
-					url: false
+					url: true
 
 
 	# =================================

@@ -1,6 +1,6 @@
 ---
 layout: 'content'
-title: 'CANH CẢI NẤU CÁ RÔ ĐỒNG'
+title: 'Canh cải nấu cá rô đồng'
 description: 
 ---
 

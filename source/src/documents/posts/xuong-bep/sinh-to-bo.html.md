@@ -1,6 +1,6 @@
 ---
 layout: 'content'
-title: 'SINH TỐ BƠ SỮA'
+title: 'Sinh tố bơ sữa'
 description: 
 ---
 

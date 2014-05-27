@@ -1,6 +1,6 @@
 ---
 layout: 'content'
-title: 'CÀ TÍM XÀO THỊT BÒ'
+title: 'Cà tím xào thịt bò'
 description: 
 ---
 

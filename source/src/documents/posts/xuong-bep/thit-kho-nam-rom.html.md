@@ -1,6 +1,6 @@
 ---
 layout: 'content'
-title: 'THỊT KHO NẤM RƠM'
+title: 'Thịt kho nấm rơm'
 description: 
 ---
 
