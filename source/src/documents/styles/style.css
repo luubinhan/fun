@@ -1912,4 +1912,21 @@ a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.acti
     margin-top: 0;
     font-size: 20px;
   }
+  .master {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .single-post ul {
+    padding-left: 18px;
+    margin-bottom: 25px;
+  }
+  .gist-name {
+    font-size: 15px;
+  }
+  .article {
+    padding-bottom: 20px;
+  }
+  .single-post {
+    font-size: 16px;
+  }
 }
