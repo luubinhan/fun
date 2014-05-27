@@ -35,7 +35,7 @@ docpadConfig = {
 			styles: [
 				'http://luubinhan.github.io/fun/vendor/normalize.css'
 				'http://luubinhan.github.io/fun/vendor/h5bp.css'
-				'http://luubinhan.github.com/fun/styles/style.css'
+				'http://luubinhan.github.io/fun/styles/style.css'
 			]
 
 			# The website's scripts
