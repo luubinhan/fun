@@ -38,3 +38,4 @@ Thanks, the DocPad team loves you.
 
 Add C4
 Add C5
+C6
