@@ -37,3 +37,4 @@ Other included things such as themes and libraries are likely already licensed b
 Thanks, the DocPad team loves you.
 
 Add C4
+Add C5
